@@ -1,0 +1,6 @@
+proj-a/.terraform.lock.hcl
+proj-b/.terraform.lock.hcl
+proj-b/.terraform/
+proj-a/.terraform/
+proj-a/terraform.tfstate
+proj-b/terraform.tfstate

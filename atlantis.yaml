@@ -1,0 +1,20 @@
+---
+version: 3
+automerge: true
+parallel_plan: true
+parallel_apply: false
+
+projects:
+- name: proj-a
+  dir: ./proj-a
+  terraform_version: v0.14.4
+  autoplan:
+    when_modified: ["*.tf", "*.sh"]
+    enabled: true
+
+- name: proj-b
+  dir: ./proj-b
+  terraform_version: v0.14.4
+  autoplan:
+    when_modified: ["*.tf", "*.sh"]
+    enabled: true
